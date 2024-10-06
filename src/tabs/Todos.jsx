@@ -1,4 +1,4 @@
-import { Form, Text } from 'components';
+import { Form, Text, TodoList } from 'components';
 import { useEffect, useState } from 'react';
 import { nanoid } from 'nanoid';
 
@@ -22,6 +22,7 @@ export const Todos = () => {
   return (
     <>
       <Form onHandleSubmit={handleSubmit} />
+      <TodoList todos={todos} />
       <Text textAlign="center">There are no any todos ...</Text>
     </>
   );
